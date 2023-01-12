@@ -1,8 +1,10 @@
 export function myFunction() {
     return true;
 }
+
 // This function should take a string and add return an new string that adds three exclamation points to the argument.
 /* 
+
 
 Input:
 
@@ -14,8 +16,8 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(somethingInput) {
+    return somethingInput + '!!!';
 }
 
 // This function should take in a number and multiply it by seven
@@ -31,7 +33,7 @@ Output:
 */
 
 export function multiplyBySeven(num) {
-    return true;
+    return num * 7;
 }
 
 // This function should take in a number and multiply it by twelve then cut the result in half
@@ -48,7 +50,7 @@ Output:
 */
 
 export function multiplyBy12ThenHalve(num) {
-    return true;
+    return (num * 12) / 2;
 }
 
 // This function should take in three numbers, divide the first by the second, then multiply the result by the third
@@ -64,7 +66,7 @@ Output:
 */
 
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return (firstNumber / secondNumber) * thirdNumber;
 }
 
 // This function should take in three numbers and return those numbers in an array
@@ -80,7 +82,8 @@ Output:
 */
 
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    const arr = [firstNumber, secondNumber, thirdNumber];
+    return arr;
 }
 
 // This function should take in three numbers and return those numbers mushed together as a string
@@ -96,7 +99,8 @@ Output:
 */
 
 export function returnAsAString(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    // return firstNumber.toString() + secondNumber.toString() + thirdNumber.toString();
+    return `${firstNumber}${secondNumber}${thirdNumber}`;
 }
 
 // This function should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number
@@ -112,7 +116,7 @@ Output:
 */
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
-    return true;
+    return `Hello! Your lucky number for the day is ${firstNumber + secondNumber}`;
 }
 
 // This function should take an array and return the second item in the array
@@ -129,7 +133,7 @@ Output:
 */
 
 export function getSecondItem(array) {
-    return true;
+    return array[1];
 }
 
 // This function should take an array and return the LAST item in the array, no matter the array's length
@@ -146,7 +150,7 @@ Output:
 */
 
 export function getLastItem(array) {
-    return true;
+    return array[array.length - 1];
 }
 
 // This function should take a dog object and return an <li> with the name of the dog
